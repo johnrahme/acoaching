@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'mysql525.loopia.se',
+            'host' => 'www10.inviso.se',
             'port' => '',
-            'database' => 'lottasgarveri_se',
-            'username' => 'admin@l161277',
-            'password' => '230192Mimmi!',
+            'database' => 'annhed1main',
+            'username' => 'annhed1john',
+            'password' => 'sjdKTa2@UX',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
