@@ -6,7 +6,7 @@ use App\Page;
 use App;
 use Illuminate\Http\Request;
 
-class ShopController extends Controller
+class AboutController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,7 +19,7 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    private $pageName = 'shop';
+    private $pageName = 'about';
     public function index($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();

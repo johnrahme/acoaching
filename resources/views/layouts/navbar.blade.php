@@ -10,18 +10,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Lottas garveri</a>
+            <a class="navbar-brand" href="#">A coaching</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li id = "welcome"><a href="{{route('welcome',App::getLocale())}}">@lang('menu.welcome')</a></li>
-                <li id = "shop"><a href="{{route('shop',App::getLocale())}}">@lang('menu.shop')</a></li>
-                <li id = "tannery"><a href="{{route('tannery',App::getLocale())}}">@lang('menu.tannery')</a></li>
-                <li id = "courses"><a href="{{route('courses',App::getLocale())}}">@lang('menu.coursesLectures')</a></li>
-                <li id = "exhibitions"><a href="{{route('exhibitions',App::getLocale())}}">@lang('menu.exhibitions')</a>
+                <li id = "about"><a href="{{route('about',App::getLocale())}}">@lang('menu.about')</a></li>
+                <li id = "coaching"><a href="{{route('coaching',App::getLocale())}}">@lang('menu.coaching')</a></li>
+                <li id = "treatment"><a href="{{route('treatment',App::getLocale())}}">@lang('menu.treatment')</a></li>
+                <li id = "courses"><a href="{{route('courses',App::getLocale())}}">@lang('menu.courses')</a>
 
-                </li>
-                <li id = "books"><a href="{{route('books',App::getLocale())}}">@lang('menu.books')</a></li>
+                <li id = "prices"><a href="{{route('prices',App::getLocale())}}">@lang('menu.prices')</a></li>
+                <li id = "contact"><a href="{{route('contact',App::getLocale())}}">@lang('menu.contact')</a></li>
 
 
             @if(App::isLocale('se'))

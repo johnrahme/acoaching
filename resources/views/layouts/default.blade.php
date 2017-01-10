@@ -21,7 +21,7 @@
     </script>
 </head>
 {{--Add padding for dynamic navbar--}}
-<body id = "body" style="padding-top:70px;" background="{{asset('/img/background.jpg')}}">
+<body id = "body" style="padding-top:70px;" background="{{asset('/img/background_2.jpg')}}">
 
 @include('layouts.navbar')
 <div class="container clear-top" style = "box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">

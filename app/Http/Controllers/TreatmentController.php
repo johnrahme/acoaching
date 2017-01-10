@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Page;
+use App\Course;
 use App;
 use Illuminate\Http\Request;
 
-class TanneryController extends Controller
+class TreatmentController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,20 +20,22 @@ class TanneryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    private $pageName = 'tannery';
+    private $pageName = 'treatment';
     public function index($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();
         App::setlocale($lang);
 
-        return view('tannery.index', ['page' => $page, 'lang' => $lang, 'active' => $this->pageName]);
+        $courses = Course::all();
+
+        return view($this->pageName.'.index', ['page' => $page, 'lang' => $lang,'courses'=>$courses,'active' => $this->pageName]);
     }
 
     public function edit($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();
         App::setlocale($lang);
-        return view('tannery.edit', ['page' => $page,'lang'=>$lang,'active' => $this->pageName]);
+        return view($this->pageName.'.edit', ['page' => $page,'lang'=>$lang,'active' => $this->pageName]);
     }
     public function update(Request $request, $lang)
     {

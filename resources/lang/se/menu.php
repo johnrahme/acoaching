@@ -1,9 +1,10 @@
 <?php
 return [
+    'about' => 'Om Anna',
     'welcome' => 'Hem',
-    'tannery' => 'Garveri',
-    'coursesLectures' => 'Kurser & Föreläsningar',
-    'shop' => 'Ateljé & Butik',
-    'exhibitions' => 'Utställningar & Muséer',
-    'books' => 'Böcker'
+    'coaching' => 'Coaching',
+    'courses' => 'Kurser',
+    'treatment' => 'Behandling/Träning',
+    'prices' => 'Priser',
+    'contact' => 'Kontakt'
 ];

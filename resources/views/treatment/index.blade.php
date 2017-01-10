@@ -4,7 +4,7 @@
     {{--@include('drafts.tannery')--}}
     {!! $page['content'] !!}
     @if(Auth::check())
-        {{ Html::linkRoute('tannery.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+        {{ Html::linkRoute('treatment.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
     @endif
 
 @endsection

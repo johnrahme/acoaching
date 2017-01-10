@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Page;
-use App\Course;
 use App;
 use Illuminate\Http\Request;
 
@@ -26,9 +25,7 @@ class CoursesController extends Controller
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();
         App::setlocale($lang);
 
-        $courses = Course::all();
-
-        return view($this->pageName.'.index', ['page' => $page, 'lang' => $lang,'courses'=>$courses,'active' => $this->pageName]);
+        return view($this->pageName.'.index', ['page' => $page, 'lang' => $lang, 'active' => $this->pageName]);
     }
 
     public function edit($lang)

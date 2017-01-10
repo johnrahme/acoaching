@@ -6,7 +6,7 @@
 @section('content')
     Ändra
 
-    {{Form::open(array('url'=> route('shop.update',App::getLocale()),'files'=>true, 'id'=>'form1'))}}
+    {{Form::open(array('url'=> route('contact.update',App::getLocale()),'files'=>true, 'id'=>'form1'))}}
 
     <p>
         {{Form::label('content', 'Innehåll', array('class' => 'required'))}} <br/>
@@ -27,7 +27,7 @@
     <script>
         {{--When uploading an image save it in the folder event--}}
 
-     onImageUpload("img/Shop","{{url('/imgStore')}}");
+     onImageUpload("img/Contact","{{url('/imgStore')}}");
     </script>
 
     <script>

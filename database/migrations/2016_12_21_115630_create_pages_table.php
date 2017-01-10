@@ -21,43 +21,43 @@ class CreatePagesTable extends Migration
             $table->timestamps();
         });
         DB::table('pages')->insert(array(
-            'content' => '<h1>Content is not set yet!</h1>',
+            'content' => '<h1>Hem content not set</h1>',
             'name' => 'Welcome',
             'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Inget innehåll</h1>',
+            'content' => '<h1>Hem Inget innehåll</h1>',
             'name' => 'Welcome',
             'lang' => 'se',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Tannery content is not set yet!</h1>',
-            'name' => 'Tannery',
+            'content' => '<h1>Coaching content is not set yet!</h1>',
+            'name' => 'Coaching',
             'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Garveri har inget innehåll</h1>',
-            'name' => 'Tannery',
+            'content' => '<h1>Coaching har inget innehåll</h1>',
+            'name' => 'Coaching',
             'lang' => 'se',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Böcker har inget innehåll</h1>',
-            'name' => 'Books',
+            'content' => '<h1>Contact har inget innehåll</h1>',
+            'name' => 'Contact',
             'lang' => 'se',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Books does not have any content</h1>',
-            'name' => 'Books',
+            'content' => '<h1>Contact does not have any content</h1>',
+            'name' => 'Contact',
             'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
@@ -77,44 +77,44 @@ class CreatePagesTable extends Migration
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Utställningar har inget innehåll</h1>',
-            'name' => 'Exhibitions',
+            'content' => '<h1>Priser har inget innehåll</h1>',
+            'name' => 'Prices',
             'lang' => 'se',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Exhibitions does not have any content</h1>',
-            'name' => 'Exhibitions',
+            'content' => '<h1>Prices does not have any content</h1>',
+            'name' => 'Prices',
             'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Butik har inget innehåll</h1>',
-            'name' => 'Shop',
+            'content' => '<h1>Behandling har inget innehåll</h1>',
+            'name' => 'Treatment',
             'lang' => 'se',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>Shop does not have any content</h1>',
-            'name' => 'Shop',
+            'content' => '<h1>Treatment does not have any content</h1>',
+            'name' => 'Treatment',
             'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
         DB::table('pages')->insert(array(
-            'content' => '<h1>List har inget innehåll</h1>',
-            'name' => 'List',
+            'content' => '<h1>About Anna content not set</h1>',
+            'name' => 'About',
+            'lang' => 'en',
+            'created_at' => date('Y-m-d H:m:s'),
+            'updated_at' => date('Y-m-d H:m:s')
+        ));
+        DB::table('pages')->insert(array(
+            'content' => '<h1>Om anna Inget innehåll</h1>',
+            'name' => 'About',
             'lang' => 'se',
-            'created_at' => date('Y-m-d H:m:s'),
-            'updated_at' => date('Y-m-d H:m:s')
-        ));
-        DB::table('pages')->insert(array(
-            'content' => '<h1>List does not have any content</h1>',
-            'name' => 'List',
-            'lang' => 'en',
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));

@@ -1,10 +1,10 @@
 <?php
 return [
-    'tannery' => 'Tannery',
+    'about' => 'About Anna',
     'welcome' => 'Home',
-    'coursesLectures' => 'Courses & Lectures',
-    'shop' => 'Studio & Shop',
-    'exhibitions' => 'Exhibitions & Museums',
-    'books' => 'Books',
-    'edit' => 'Edit'
+    'coaching' => 'Coaching',
+    'courses' => 'Courses',
+    'treatment' => 'Treatment/Training',
+    'prices' => 'Prices',
+    'contact' => 'Contact'
 ];

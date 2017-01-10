@@ -6,7 +6,7 @@ use App\Page;
 use App;
 use Illuminate\Http\Request;
 
-class ExhibitionsController extends Controller
+class PricesController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,7 +19,7 @@ class ExhibitionsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    private $pageName = 'exhibitions';
+    private $pageName = 'prices';
     public function index($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();

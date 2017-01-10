@@ -5,7 +5,7 @@
         {{--@include('drafts.shop')--}}
         {!! $page['content'] !!}
         @if(Auth::check())
-        {{ Html::linkRoute('shop.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+        {{ Html::linkRoute('contact.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
         @endif
 
 

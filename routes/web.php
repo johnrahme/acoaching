@@ -22,29 +22,25 @@ Route::get('/{lang}/edit', 'WelcomeController@edit')->name('welcome.edit')->midd
 Route::post('/{lang}/update', 'WelcomeController@update')->middleware('auth');
 Route::post('/imgStore', 'WelcomeController@imgStore')->middleware('auth');
 
-//Tannery
+//About
 
-Route::get('/{lang}/tannery', 'TanneryController@index')->name('tannery');
+Route::get('/{lang}/about', 'AboutController@index')->name('about');
 //Route::get('/{lang}', 'WelcomeController@indexEn');
-Route::get('/{lang}/tannery/edit', 'TanneryController@edit')->name('tannery.edit')->middleware('auth');
-Route::post('/{lang}/tannery/update', 'TanneryController@update')->name('tannery.update')->middleware('auth');
+Route::get('/{lang}/about/edit', 'AboutController@edit')->name('about.edit')->middleware('auth');
+Route::post('/{lang}/about/update', 'AboutController@update')->name('about.update')->middleware('auth');
 
-//Shop
+//Coaching
 
-Route::get('/{lang}/shop', 'ShopController@index')->name('shop');
+Route::get('/{lang}/coaching', 'CoachingController@index')->name('coaching');
 //Route::get('/{lang}', 'WelcomeController@indexEn');
-Route::get('/{lang}/shop/edit', 'ShopController@edit')->name('shop.edit')->middleware('auth');
-Route::post('/{lang}/shop/update', 'ShopController@update')->name('shop.update')->middleware('auth');
+Route::get('/{lang}/coaching/edit', 'CoachingController@edit')->name('coaching.edit')->middleware('auth');
+Route::post('/{lang}/coaching/update', 'CoachingController@update')->name('coaching.update')->middleware('auth');
 
-//Exhibitions
-Route::get('/{lang}/exhibitions', 'ExhibitionsController@index')->name('exhibitions');
+//Contact
+Route::get('/{lang}/contact', 'ContactController@index')->name('contact');
 //Route::get('/{lang}', 'WelcomeController@indexEn');
-Route::get('/{lang}/exhibitions/edit', 'ExhibitionsController@edit')->name('exhibitions.edit')->middleware('auth');
-Route::post('/{lang}/exhibitions/update', 'ExhibitionsController@update')->name('exhibitions.update')->middleware('auth');
-
-Route::get('/{lang}/list', 'ListController@index')->name('list');
-Route::get('/{lang}/list/edit', 'ListController@edit')->name('list.edit')->middleware('auth');
-Route::post('/{lang}/list/update', 'ListController@update')->name('list.update')->middleware('auth');
+Route::get('/{lang}/contact/edit', 'ContactController@edit')->name('contact.edit')->middleware('auth');
+Route::post('/{lang}/contact/update', 'ContactController@update')->name('contact.update')->middleware('auth');
 
 
 //Courses
@@ -53,21 +49,19 @@ Route::get('/{lang}/courses', 'CoursesController@index')->name('courses');
 Route::get('/{lang}/courses/edit', 'CoursesController@edit')->name('courses.edit')->middleware('auth');
 Route::post('/{lang}/courses/update', 'CoursesController@update')->name('courses.update')->middleware('auth');
 
-//Books
+//Prices
 
-Route::get('/{lang}/books', 'BooksController@index')->name('books');
+Route::get('/{lang}/prices', 'PricesController@index')->name('prices');
 //Route::get('/{lang}', 'WelcomeController@indexEn');
-Route::get('/{lang}/books/edit', 'BooksController@edit')->name('books.edit')->middleware('auth');
-Route::post('/{lang}/books/update', 'BooksController@update')->name('books.update')->middleware('auth');
+Route::get('/{lang}/prices/edit', 'PricesController@edit')->name('prices.edit')->middleware('auth');
+Route::post('/{lang}/prices/update', 'PricesController@update')->name('prices.update')->middleware('auth');
 
+//Treatment
 
-//Course
-
-Route::get('/se/course/create', 'CourseController@create')->name('course.create');
-Route::post('/se/course/store', 'CourseController@store')->name('course.store');
-Route::post('/se/course/update', 'CourseController@update')->name('course.update');
-Route::get('/se/course/{id}/edit', 'CourseController@edit')->name('course.edit');
-Route::delete('/se/course/{id}/delete', 'CourseController@delete')->name('course.delete');
+Route::get('/{lang}/treatment', 'TreatmentController@index')->name('treatment');
+//Route::get('/{lang}', 'WelcomeController@indexEn');
+Route::get('/{lang}/treatment/edit', 'TreatmentController@edit')->name('treatment.edit')->middleware('auth');
+Route::post('/{lang}/treatment/update', 'TreatmentController@update')->name('treatment.update')->middleware('auth');
 
 
 

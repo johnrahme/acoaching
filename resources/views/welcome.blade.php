@@ -1,14 +1,13 @@
-@extends('layouts.default_home')
+@extends('layouts.default')
 @section('content')
     {{--@include('layouts.carousel')--}}
-    @include('layouts.carousel')
 {{--    @include('drafts.welcome')--}}
     {!! $page['content'] !!}
     @if(Auth::check())
         {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
     @endif
 @endsection
-@section('scripts')
+{{--@section('scripts')
     <script>
         //var body = $('body');
         var body = $('#storeBG');
@@ -24,7 +23,7 @@
         course.css('background-size','100% 100%');
         course.css('background-attachment','fixed');
     </script>
-@endsection
+@endsection--}}
 {{--@section('content')--}}
 
 

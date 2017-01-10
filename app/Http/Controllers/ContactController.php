@@ -6,7 +6,7 @@ use App\Page;
 use App;
 use Illuminate\Http\Request;
 
-class ListController extends Controller
+class ContactController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,20 +19,20 @@ class ListController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    private $pageName = 'list';
+    private $pageName = 'contact';
     public function index($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();
         App::setlocale($lang);
 
-        return view($this->pageName.'.index', ['page' => $page, 'lang' => $lang, 'active' => 'exhibitions']);
+        return view($this->pageName.'.index', ['page' => $page, 'lang' => $lang, 'active' => $this->pageName]);
     }
 
     public function edit($lang)
     {
         $page = Page::where('name', '=', $this->pageName)->where('lang','=',$lang)->first();
         App::setlocale($lang);
-        return view($this->pageName.'.edit', ['page' => $page,'lang'=>$lang,'active' => 'exhibitions']);
+        return view($this->pageName.'.edit', ['page' => $page,'lang'=>$lang,'active' => $this->pageName]);
     }
     public function update(Request $request, $lang)
     {
