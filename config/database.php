@@ -51,7 +51,7 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
-
+/*
         'mysql' => [
             'driver' => 'mysql',
             'host' => 'www10.inviso.se',
@@ -64,21 +64,21 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-        ]
+        ]*/
 
-//        'mysql' => [
-//            'driver' => 'mysql',
-//            'host' => 'localhost',
-//            'port' => '',
-//            'database' => 'lotta',
-//            'username' => 'root',
-//            'password' => '',
-//            'charset' => 'utf8',
-//            'collation' => 'utf8_unicode_ci',
-//            'prefix' => '',
-//            'strict' => true,
-//            'engine' => null,
-//        ]
+        'mysql' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'port' => '',
+            'database' => 'annhed1main',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ]
         ,
 
         'pgsql' => [
