@@ -25,9 +25,10 @@
 <body id = "body" >
 
 
-@yield('bgImage')
+
 
 @include('layouts.navbar')
+@yield('bgImage')
 {{--<div class="container clear-top" style = "box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">--}}
 <div class="container clear-top" style = "background-color: #fff; padding: 18px">
 

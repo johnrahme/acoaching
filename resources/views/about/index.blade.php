@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('bgImage')
-    <div style="position: relative">
+    {{--<div style="position: relative">--}}
         {{--<div class = "row">--}}
             {{--<div class = "col-sm-5">--}}
                 {{--<h2  style = "padding-top: 5%; position: absolute;top: 30%; left: 10%">Att våga är att förlora fotfästet för en stund</h2>--}}
@@ -8,7 +8,7 @@
         {{--</div>--}}
         <img class = "img-responsive" src="{{asset('/img/about_bg.jpg')}}">
 
-    </div>
+    {{--</div>--}}
 
 @endsection
 @section('content')
