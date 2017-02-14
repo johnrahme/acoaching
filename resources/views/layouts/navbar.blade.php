@@ -1,7 +1,12 @@
 
 
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" style = "border: 0px; background: rgba(255, 255, 255, 0.9);">
+
+<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/custom/customnav.css') }}">
+
+{{--<nav class="navbar navbar-default navbar-static-top" style = "border: 0px; background: rgba(255, 255, 255, 0.9);">--}}
+<nav class="navbar navbar-default navbar-static-top" style = "border: 0px">
+
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -10,10 +15,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">A coaching</a>
+            {{--<a class="navbar-brand" href="#">A coaching</a>--}}
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-left">
+            <ul class="nav navbar-nav">
                 <li id = "welcome"><a href="{{route('welcome',App::getLocale())}}">@lang('menu.welcome')</a></li>
                 <li id = "about"><a href="{{route('about',App::getLocale())}}">@lang('menu.about')</a></li>
                 <li id = "coaching"><a href="{{route('coaching',App::getLocale())}}">@lang('menu.coaching')</a></li>
