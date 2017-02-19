@@ -1,45 +1,50 @@
-<h2>Kurser i fiskskinnsgarvning </h2>
-Du som är intresserad av hantverk och känner att det skulle vara roligt att lära dig skinnberedning och garvning med gamla metoder har här en möjlighet att under några dagar få sakkunnig handledning av mig.
-Kurserna ger dig möjlighet att lära dig grunderna i traditionell skinnberedning -garvning med enkla metoder och redskap, med naturliga ämnen.
+<style>
 
-<h2>Föreläsningar</h2>
-Garvningens historia och utveckling från forntid till nutid:
-Inuiternas (eskimåer) sätt att ta tillvara ren- och sälskinn. Tekniker som än idag är desamma som de första renjägarna i vårt land använde för 12000 år sedan.
-Indianer i Canada som  använder en fettgarvningsmetod vilken troligen är den äldsta egentliga garvningsmetoden. Samer i norra Scandinavien där vi finner barkgarvningen, den metod som haft störst betydelse i vårt land fram till kromgarvningens upptäkt i slutet av 1800-talet.
-Fiskskinnsgarvning.
-Jag kan ta emot sällskap på upp till 15 personer för demonstration samt föreläsning i garveriet, men jag reser även runt och föreläser på andra orter.
-
+    p{
+        text-align: center;
+    }
+    h2{
+        color: #e0e2e2;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+</style>
 
 <div class = "row">
-    <div class = "col-md-6">
-        <div class = "row">
-            <div class = "col-xs-6">
-                <img class = "img-responsive" align="center" src = "{{asset('/img/Shop/lakerutor.jpg')}}">
-                <p align="center">Väska i lake skinn och
-                    nöthud.</p>
-            </div>
-            <div class = "col-xs-6">
-                <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/ryggsack.jpg')}}">
-                <p align="center">Väska i lake skinn och
-                    nöthud.</p>
-            </div>
-        </div>
+    <div class = "col-md-2">
+
     </div>
-    <div class = "col-md-6">
-        <div class = "row">
-            <div class = "col-xs-6">
-                <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/svart_vast.jpg')}}">
-                <p align="center">Väska i lake skinn och
-                    nöthud.</p>
-            </div>
-            <div class = "col-xs-6">
-                <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/Vaska_i_nothud.jpg')}}">
-                <p align="center">Väska i lake skinn och
-                    nöthud.</p>
-            </div>
-        </div>
+    <div class = "col-md-8">
+        <h2>
+            Kurser
+        </h2>
+        <p>
+            Mindfulness står för medveten närvaro. Att lära sig vara medveten i nuet och se det som händer här och nu med öppet sinne. Ofta oroar vi oss för vad som ska komma och ske eller grämer oss för det som varit. Det som hänt har hänt och det som kommer hända kan vi inte göra något åt i nuet.
+            </p>
+            <p>
+            Mindfulness vänder sig till alla som känner att det vill få ut mer av livet, lära sig stressa av och ta en sak i taget. Att leva ett mer värdigt, inspirerande och kvalitativt liv. Mindfulness passar även dig som vill jobba med din självkänsla och lära känna dig själv bättre.
+            </p>
+            <p>
+            Mindfulness finns helt enkelt för dig som vill göra förändringar i ditt liv!
+
+            <h4>10-veckors program</h4>
+            Nu finns kurs i Mindfulness på Cd-skiva. Du kan i lugn och ro praktisera detta på egen hand hemma när det passar dig bäst. Enkelt och smidigt hjälpa dig stressa av och bli mer medveten och närvarande i nuet.
+            </p>
+        <p>
+            Programmet består av en Cd-skiva med  tio meditationer ( en för varje vecka) och ett komplett material med enkla övningar och tips för en mer medveten vardag som du kan genomföra smidigt och enkelt hemma.  (Klicka på länken för att se programmet)
+        </p>
+        <p>
+            Kostnad: 599
+        </p>
+        <p>
+            Vid intresse kontaktar du mig via mail. Du får en en bekräftelse och info om prel leveransdatum.
+
+        </p>
     </div>
+    <div class = "col-md-2">
+
+    </div>
+
 </div>
-
-
-<h2>Kommande kurser och föreläsningar</h2>

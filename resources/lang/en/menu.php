@@ -4,7 +4,7 @@ return [
     'welcome' => 'Home',
     'coaching' => 'Coaching',
     'courses' => 'Courses',
-    'treatment' => 'Treatment/Training',
+    'treatment' => 'Treatment',
     'prices' => 'Prices',
     'contact' => 'Contact'
 ];

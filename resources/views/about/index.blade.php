@@ -6,13 +6,13 @@
                 {{--<h2  style = "padding-top: 5%; position: absolute;top: 30%; left: 10%">Att våga är att förlora fotfästet för en stund</h2>--}}
             {{--</div>--}}
         {{--</div>--}}
-        <img class = "img-responsive" src="{{asset('/img/about_bg.jpg')}}">
+        <img class = "img-responsive" src="{{asset('/img/Backgrounds/Ommig_e.jpg')}}">
 
     {{--</div>--}}
 
 @endsection
 @section('content')
-    {{--    @include('drafts.shop')--}}
+{{--        @include('drafts.about')--}}
         {!! $page['content'] !!}
         @if(Auth::check())
         {{ Html::linkRoute('about.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}

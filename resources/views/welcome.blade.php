@@ -1,8 +1,13 @@
 @extends('layouts.default')
+@section('bgImage')
+    <img class = "img-responsive" src="{{asset('/img/Backgrounds/Ommig_e.jpg')}}">
+@endsection
 @section('content')
+
     {{--@include('layouts.carousel')--}}
 {{--    @include('drafts.welcome')--}}
     {!! $page['content'] !!}
+
     @if(Auth::check())
         {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
     @endif

@@ -1,8 +1,11 @@
 @extends('layouts.default')
+@section('bgImage')
+    <img class = "img-responsive" src="{{asset('/img/Backgrounds/coaching_e.jpg')}}">
+@endsection
 @section('content')
     {{--    @include('drafts.shop')--}}
 
-        {{--@include('drafts.exhibitions')--}}
+{{--        @include('drafts.coaching')--}}
         {!! $page['content'] !!}
 
     @if(Auth::check())
