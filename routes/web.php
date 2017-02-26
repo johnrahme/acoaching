@@ -63,6 +63,10 @@ Route::get('/{lang}/treatment', 'TreatmentController@index')->name('treatment');
 Route::get('/{lang}/treatment/edit', 'TreatmentController@edit')->name('treatment.edit')->middleware('auth');
 Route::post('/{lang}/treatment/update', 'TreatmentController@update')->name('treatment.update')->middleware('auth');
 
+//Contact
+
+Route::post('/mail', 'MailController@send')->name('mail.send');
+
 
 
 

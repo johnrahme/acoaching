@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('bgImage')
-    <img class = "img-responsive" src="{{asset('/img/Backgrounds/behandling_e.jpg')}}">
+    <img class = "img-responsive center-block" src="{{asset('/img/Backgrounds/behandling_e.jpg')}}">
 @endsection
 @section('content')
     {{--@include('drafts.welcome')--}}

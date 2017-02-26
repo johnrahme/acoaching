@@ -6,7 +6,7 @@
                 {{--<h2  style = "padding-top: 5%; position: absolute;top: 30%; left: 10%">Att våga är att förlora fotfästet för en stund</h2>--}}
             {{--</div>--}}
         {{--</div>--}}
-        <img class = "img-responsive" src="{{asset('/img/Backgrounds/Ommig_e.jpg')}}">
+        <img class = "img-responsive center-block" src="{{asset('/img/Backgrounds/Ommig_e.jpg')}}">
 
     {{--</div>--}}
 

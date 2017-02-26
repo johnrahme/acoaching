@@ -31,13 +31,18 @@
 @yield('bgImage')
 {{--<div class="container clear-top" style = "box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">--}}
 <div class="container clear-top" style = "background-color: #fff; padding: 18px">
+    @if(session()->has('message'))
+    <div class="alert alert-success">
+        {{session('message')}}
+    </div>
+    @endif
 
     @yield('content')
 </div>
 {{--<div class="container clear-top" style="box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">--}}
     {{--@yield('content')--}}
 {{--</div>--}}
-@include('layouts.footer');
+@include('layouts.footer')
 
 <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/jquery-2.2.2.min.js') }}"></script>
