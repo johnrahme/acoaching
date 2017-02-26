@@ -14,6 +14,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+//Events
+
+Route::get('/events', 'EventController@index')->name('events');
+Route::get('/event/create', 'EventController@create')->name('event.create')->middleware('auth');
+Route::get('/event/{id}/edit', 'EventController@edit')->name('event.edit')->middleware('auth');
+Route::get('/event/{id}/view', 'EventController@view')->name('event.view');
+
+Route::post('/event/store', 'EventController@store')->name('event.store')->middleware('auth');
+Route::post('/event/update', 'EventController@update')->name('event.update')->middleware('auth');
+
+Route::delete('/event/destroy', 'EventController@destroy')->name('event.destroy')->middleware('auth');
 
 Route::get('/', function(){return redirect('/se');});
 Route::get('/{lang}', 'WelcomeController@index')->name('welcome');
@@ -66,6 +77,11 @@ Route::post('/{lang}/treatment/update', 'TreatmentController@update')->name('tre
 //Contact
 
 Route::post('/mail', 'MailController@send')->name('mail.send');
+
+
+
+
+
 
 
 

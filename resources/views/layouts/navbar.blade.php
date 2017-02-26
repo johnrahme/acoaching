@@ -27,6 +27,10 @@
 
                 <li id = "prices"><a href="{{route('prices',App::getLocale())}}">@lang('menu.prices')</a></li>
                 <li id = "contact"><a href="{{route('contact',App::getLocale())}}">@lang('menu.contact')</a></li>
+                @if(Auth::check())
+                    <li id = "Event"><a href = "{{route('events')}}">Nyheter</a></li>
+                @endif
+
 
 
             @if(App::isLocale('se'))

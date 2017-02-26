@@ -6,8 +6,36 @@
 
     {{--@include('layouts.carousel')--}}
 {{--    @include('drafts.welcome')--}}
+    <h2 style = "text-align: center;color: #467569">Välkommen</h2>
 
-    {!! $page['content'] !!}
+    <div class = "row">
+        <div class = "col-md-6">
+            @include('drafts.welcome')
+{{--            {!! $page['content'] !!}--}}
+        </div>
+        <div class = "col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body" style="padding-top: 0">
+                    <div class="page-header" style="margin-top:0px; margin-bottom: 2">
+                        <h4 class="text-center">Nyheter</h4>
+                    </div>
+                    <div class="list-group">
+                        @foreach($events as $event)
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-item-heading">
+                                    <h4>{{$event->title}}</h4>
+                                    <small>{{$event->created_at}}</small>
+                                </div>
+                                <p>{!! $event->content !!}</p>
+                            </a>
+                        @endforeach
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     @if(Auth::check())
         {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}

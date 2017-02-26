@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Page;
 use App;
 use Illuminate\Http\Request;
-
+use App\Event;
 class WelcomeController extends Controller
 {
     /**
@@ -23,8 +23,9 @@ class WelcomeController extends Controller
     {
         $welcome = Page::where('name', '=', 'welcome')->where('lang','=',$lang)->first();
         App::setlocale($lang);
+        $events = Event::all();
 
-        return view('welcome', ['page' => $welcome, 'lang' => $lang, 'active' => 'welcome']);
+        return view('welcome', ['page' => $welcome, 'lang' => $lang, 'active' => 'welcome', 'events' => $events]);
     }
     public function indexEn()
     {
