@@ -10,8 +10,8 @@
 
     <div class = "row">
         <div class = "col-md-6">
-            @include('drafts.welcome')
-{{--            {!! $page['content'] !!}--}}
+{{--            @include('drafts.welcome')--}}
+            {!! $page['content'] !!}
         </div>
         <div class = "col-md-6">
             <div class="panel panel-default">
