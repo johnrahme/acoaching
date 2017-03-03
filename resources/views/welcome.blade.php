@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('bgImage')
-    <img class = "img-responsive center-block" src="{{asset('/img/Backgrounds/Ommig_e.jpg')}}">
+    <img class = "img-responsive center-block" src="{{asset('/img/Backgrounds/Welcome_e.jpg')}}">
 @endsection
 @section('content')
 
@@ -9,11 +9,11 @@
     <h2 style = "text-align: center;color: #467569">Välkommen</h2>
 
     <div class = "row">
-        <div class = "col-md-6">
+        <div class = "col-md-8">
 {{--            @include('drafts.welcome')--}}
             {!! $page['content'] !!}
         </div>
-        <div class = "col-md-6">
+        <div class = "col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body" style="padding-top: 0">
                     <div class="page-header" style="margin-top:0px; margin-bottom: 2">

@@ -15,7 +15,7 @@
             Kontakt
         </h2>
 
-        @include('layouts.contactForm')
+
         <div class = "row">
             <div class = "col-md-4">
                 <h4>
@@ -41,6 +41,8 @@
                 @include('layouts.map')
             </div>
         </div>
+        <br>
+        @include('layouts.contactForm')
 
     </div>
     <div class = "col-md-2">
