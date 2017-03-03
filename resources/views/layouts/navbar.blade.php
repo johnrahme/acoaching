@@ -34,12 +34,12 @@
 
 
             @if(App::isLocale('se'))
-                    <li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'en')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('/img/english.png')}}"></a></li>
+                    {{--<li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'en')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('/img/english.png')}}"></a></li>--}}
                     {{--<li>{{ Html::linkRoute(Route::currentRouteName(), '<img class = "" style="height: auto; width: 23px;" src = "img/english.png">', 'en') }}</li>--}}
                 @elseif(App::isLocale('en'))
-                    <li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'se')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('img/swedish.png')}}"></a></li>
+                    {{--<li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'se')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('img/swedish.png')}}"></a></li>--}}
 {{--                    <li>{{ Html::linkRoute(Route::currentRouteName(), 'Svenska', 'se') }}</li>--}}
-                @endif
+             @endif
 
             </ul>
         </div><!--/.nav-collapse -->
