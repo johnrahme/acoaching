@@ -1,0 +1,26 @@
+Validation kontaktformulär
+
+Mörkare bakgrund på iconen
+
+Citat på Kurser?
+
+Acoaching istället för a-coaching, footer och kontaktsidan´
+
+Springbilden med ryggen istället
+
+Gummibandbilden på kurser, tillsvidare
+
+Mellanrum mellan Rubrik och karta på Kontakt
+
+
+Lägg till så att det går att ändra text  på kontaktsidan
+
+
+Nyheter fel ordning, 1 timma fel
+
+Gmail koppling!
+
+Ändra login till info@acoaching.se
+
+
+
