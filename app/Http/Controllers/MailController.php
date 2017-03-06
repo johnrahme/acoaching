@@ -33,17 +33,17 @@ class MailController extends Controller
         }
 
 
-//        $to      = 'info@acoaching.se';
-//        $subject = 'Kontaktad av ' . $request->input('name');
-//        $message = $request->input('message');
-//        $from = $request->input('email');
-//        $headers = 'From: '.$from. "\r\n" .
-//            'Reply-To: '.$from;
-//
-//        mail($to, $subject, $message, $headers);
+        $to      = 'info@acoaching.se';
+        $subject = 'Kontaktad av ' . $request->input('name');
+        $message = $request->input('message');
+        $from = $request->input('email');
+        $headers = 'From: '.$from. "\r\n" .
+            'Reply-To: '.$from;
+
+        mail($to, $subject, $message, $headers);
 
 
-//        Mail::to('info@acoaching.se')->send(new Contact('John', 'Meddelande', 'john.rahme.se@gmail.com'));
+
         return redirect()->back()->with('message', 'Tack för ditt mail!');
     }
 }
