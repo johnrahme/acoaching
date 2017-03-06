@@ -5,9 +5,43 @@
 @section('content')
 
 
-        @include('drafts.contact')
 
-{{--                {!! $page['content'] !!}--}}
+        <style>
+
+            h2{
+                color: #e0e2e2;
+                text-align: center;
+            }
+        </style>
+
+        <div class = "row">
+            <div class = "col-md-2">
+
+            </div>
+            <div class = "col-md-8">
+                <h2>
+                    Kontakt
+                </h2>
+
+                <div class = "row">
+                    <div class = "col-md-4">
+                       {!! $page['content'] !!}
+                    </div>
+                    <div class = "col-md-8">
+                        <br>
+                        @include('layouts.map')
+                    </div>
+                </div>
+                <br>
+                @include('layouts.validation.error')
+                @include('layouts.contactForm')
+
+            </div>
+            <div class = "col-md-2">
+
+            </div>
+
+        </div>
 
 
         @if(Auth::check())

@@ -23,7 +23,7 @@ class WelcomeController extends Controller
     {
         $welcome = Page::where('name', '=', 'welcome')->where('lang','=',$lang)->first();
         App::setlocale($lang);
-        $events = Event::all();
+        $events = Event::all()->sortByDesc('created_at')->sortBy('order');
 
         return view('welcome', ['page' => $welcome, 'lang' => $lang, 'active' => 'welcome', 'events' => $events]);
     }

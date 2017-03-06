@@ -19,11 +19,11 @@
             </div>
             <div class="form-group">
                 <label for="order">Prio</label>
-                <select class="form-control" id="order" name = "order" value = "2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                <select class="form-control" id="order" name = "order">
+                    <option @if($event->order == 1) selected = "selected" @endif>1</option>
+                    <option @if($event->order == 2) selected = "selected" @endif >2</option>
+                    <option @if($event->order == 3) selected = "selected" @endif>3</option>
+                    <option @if($event->order == 4) selected = "selected" @endif>4</option>
                 </select>
 
             </div>

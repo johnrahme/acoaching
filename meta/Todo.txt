@@ -1,22 +1,17 @@
-Validation kontaktformulär
 
 Mörkare bakgrund på iconen
 
-Citat på Kurser?
+Acoaching istället för a-coaching kontaktsidan´
 
-Acoaching istället för a-coaching, footer och kontaktsidan´
+Springbilden med ryggen istället 
 
-Springbilden med ryggen istället
-
-Gummibandbilden på kurser, tillsvidare
-
-Mellanrum mellan Rubrik och karta på Kontakt
+Mellanrum mellan Rubrik och karta på Kontakt : KLAR!
 
 
-Lägg till så att det går att ändra text  på kontaktsidan
+Lägg till så att det går att ändra text  på kontaktsidan : KLAR!
 
 
-Nyheter fel ordning, 1 timma fel
+Nyheter fel ordning, 1 timma fel: KLAR!
 
 Gmail koppling!
 

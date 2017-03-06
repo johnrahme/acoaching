@@ -17,10 +17,10 @@
             </div>
             <div class="form-group">
                 <label for="order">Prio</label>
-                <select class="form-control" id="order" name = "order" value = "2">
+                <select class="form-control" id="order" name = "order">
                     <option>1</option>
                     <option>2</option>
-                    <option>3</option>
+                    <option selected = "selected">3</option>
                     <option>4</option>
                 </select>
 

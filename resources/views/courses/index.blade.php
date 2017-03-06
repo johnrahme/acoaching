@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('bgImage')
+    <img class = "img-responsive center-block" src="{{asset('/img/Backgrounds/courses_e.jpg')}}">
+@endsection
 @section('content')
     {{--    @include('drafts.shop')--}}
 
