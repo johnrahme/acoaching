@@ -21,13 +21,13 @@
                     </div>
                     <div class="list-group">
                         @foreach($events as $event)
-                            <a href="#" class="list-group-item">
+                            <div class="list-group-item">
                                 <div class="list-group-item-heading">
                                     <h4>{{$event->title}}</h4>
                                     <small>{{$event->created_at}}</small>
                                 </div>
                                 <p>{!! $event->content !!}</p>
-                            </a>
+                            </div>
                         @endforeach
 
                     </div>
