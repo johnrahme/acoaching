@@ -12,6 +12,24 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.css') }}">
+    <!--Fonter-->
+    <style type="text/css">
+        @font-face {
+            font-family: "Bodoni72";
+            src: url({{url('css/fonts/Bodoni.ttc')}}) format("truetype");
+        }
+        h2 {
+            font-family: "Bodoni72", Verdana, Tahoma;
+        }
+        @font-face {
+            font-family: "Avenir";
+            src: url({{url('css/fonts/AvenirNextLTPro-Regular.otf')}}) format("truetype");
+        }
+        h4 {
+            font-family: "Avenir", Verdana, Tahoma;
+            line-height: 130%;
+        }
+    </style>
     @yield('styles')
     <!-- Scripts -->
     <script>

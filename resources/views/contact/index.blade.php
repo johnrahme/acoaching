@@ -9,7 +9,7 @@
         <style>
 
             h2{
-                color: #e0e2e2;
+                color: #467569;
                 text-align: center;
             }
         </style>

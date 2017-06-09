@@ -6,7 +6,7 @@
 
     {{--@include('layouts.carousel')--}}
 {{--    @include('drafts.welcome')--}}
-    <h2 style = "text-align: center;color: #467569">Välkommen</h2>
+    {{--<h2 style = "text-align: center;color: #467569">Välkommen</h2>--}}
 
     <div class = "row">
         <div class = "col-md-8">

@@ -2,6 +2,10 @@ function onImageUpload(folder,url, token) {
 
     $(document).ready(function () {
         $('.summernote').summernote({
+            fontNames: [
+                'Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
+                'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Bodoni72','Avenir'
+            ],
             height: 400,
             minHeight: 400,
             //maxHeight: 400,
